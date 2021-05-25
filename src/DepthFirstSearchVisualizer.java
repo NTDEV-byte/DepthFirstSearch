@@ -4,7 +4,7 @@ import java.util.*;
 import java.util.List;
 import java.util.Stack;
 
-public class Maze extends JPanel {
+public class DepthFirstSearchVisualizer extends JPanel {
 
 
         public static final int SIMULATION_SPEED = 30;
@@ -34,7 +34,7 @@ public class Maze extends JPanel {
         private Color bounds;
 
 
-                public Maze(){
+                public DepthFirstSearchVisualizer(){
                         setPreferredSize(new Dimension(gridWidth * nodeSize   , gridHeight * nodeSize ));
                         grid = new int[gridWidth * gridHeight];
                         visitedCoordinates = new Stack<>();
@@ -190,7 +190,7 @@ public class Maze extends JPanel {
 
                     public static void main(String[] args){
 
-                          Maze maze = new Maze();
+                          DepthFirstSearchVisualizer maze = new DepthFirstSearchVisualizer();
 
                           maze.start();
 
